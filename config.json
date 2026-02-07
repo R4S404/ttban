@@ -1,7 +1,7 @@
 {
-    "report_url": "https://mssdk-sg.tiktok.com/web/report?msToken=mIOfgcue6jxr-I98jRo21lnaGtCWIa3HsO0C5RfTmPigpBd6flH4FbZEBVUFNaYW0donQ7S2vRn1sTCsy4KSdWrAx4boey-RXxRsw0yW9las-xN2twkp4dCrqdMCiJAGx2WvuTVphxDfPWY=&X-Bogus=DFSzswVuglUlL35KtqDJv09WcBnO",
+    "report_url": "https://www.tiktok.com/aweme/v2/aweme/feedback/?WebIdLastTime=0&aid=1988&app_language=fr&app_name=tiktok_web&browser_language=fr&browser_name=Mozilla&browser_online=true&browser_platform=Win32&browser_version=5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F144.0.0.0%20Safari%2F537.36%20Edg%2F144.0.0.0&channel=tiktok_web&cookie_enabled=true&current_region=FR&data_collection_enabled=true&device_id=7484944582795888150&device_platform=web_pc&focus_state=true&from_page=user&history_len=4&is_fullscreen=false&is_page_visible=true&lang=fr&nickname=mom%20of%20Art%C3%A9mis%F0%9F%8F%9B%EF%B8%8F%F0%9F%A7%B8&object_id=7449085723308819478&odinId=7588499442484741175&os=windows&owner_id=7449085723308819478&priority_region=FR&reason=91015&referer=&region=FR&report_type=user&reporter_id=7588499442484741175&screen_height=960&screen_width=1536&secUid=MS4wLjABAAAAwkbd-Bj840RkP5x8WNdlJTeosZ9Fle-g67JZRbYgc1f1nkQzj9i2AQfjiTGtcXtd&target=7449085723308819478&tz_name=Europe%2FParis&user_is_login=true&webcast_language=fr&msToken=rIt6BSOM6SFbCQziOSb7zDJ45FGRW-ELQ2OfFCG3HVAMPxmI_Z6GPprKEAWye7lOPZrF27HQ7R4jyerPOSjjjYE15r3V8aCho0JExnNsPmHH0GJbWx7Neh9-jbqa9bktyUweBRA8txAtHqeMXkztfzLXrQ==&X-Bogus=DFSzsIVLxqkANC-tCNM/qOVRr3EL&X-Gnarly=MPR7uC1i7mVFrlzL5RxzTHNFtUBtkvBYfQVOz2qF8NRf8pWs8c-3lokqEsHl2B0q2db8H-ir4i0y9wRaL1gsaZ4gvunaNJpgIEeM0ynHiFyLMsxKjf87m3z4U1/wIl-8M0D5n5qi6XnMPXb961yfwzJ1tTP21qjflnOdHfN/lbLaO5FOiikOVojPTRuhRA1rzVWDXtktCmS6PzesdED0B2rKvKQT1yUrABySvbAGAWWsE4xnRjBPQzVc/GJB4NvGHsUzVyr0xmoKWUi31ANaW9QRm0leeYgfR/WzN8KIJAQE1P0QkVCdiJ80igsr0aUF3dw=",
     "proxy_scraper": "n",
-    "threads": 200,
+    "threads": 10,
 
     "report_types": {
         "Violence": "n",
@@ -11,7 +11,7 @@
         "Hate": "n",
         "Bullying": "n",
         "Suicide Or Self-Harm": "n",
-        "Dangerous Content": "n",
+        "Dangerous Content": "y",
         "Sexual Content": "n",
         "Porn": "n",
         "Drugs": "n",
