@@ -1,4 +1,5 @@
 import ctypes, json, os, time, random, string, getpass, threading, re, sys
+import platform
 
 try:
     import pystyle
@@ -17,6 +18,16 @@ except ModuleNotFoundError:
 
 from pystyle import Write, System, Colorate, Colors
 from colorama import Fore, Style, init
+
+def set_console_title(title):
+    if platform.system() == "Windows":
+        try:
+            ctypes.windll.kernel32.SetConsoleTitleW(title)
+        except AttributeError:
+            pass
+    else:
+        sys.stdout.write(f"\033]0;{title}\007")
+        sys.stdout.flush()
 
 red = Fore.RED
 yellow = Fore.YELLOW
@@ -38,7 +49,11 @@ generated_agents = 0
 total = 1
 
 start = time.time()
-ctypes.windll.kernel32.SetConsoleTitleW(f'[ Tiktok MassReport ] By H4cK3dR4Du & 452b')
+#Windows Title
+#ctypes.windll.kernel32.SetConsoleTitleW(f'[ Tiktok MassReport ] By H4cK3dR4Du & 452b')
+
+#Linux Title
+set_console_title(f'[ Tiktok MassReport ]')
 
 def save_proxies(proxies):
     with open("proxies.txt", "w") as file:
@@ -92,8 +107,8 @@ with open(f"config.json") as f:
 def update_console_title():
     global success, failed, generated_agents, total
     success_rate = round(success/total*100,2)
-    ctypes.windll.kernel32.SetConsoleTitleW(f'[ Tiktok MassReport ] By H4cK3dR4Du & 452b | Reports Sent : {success} ~ Failed : {failed} ~ Success Rate : {success_rate}%')
-
+    #ctypes.windll.kernel32.SetConsoleTitleW(f'[ Tiktok MassReport ] By H4cK3dR4Du & 452b | Reports Sent : {success} ~ Failed : {failed} ~ Success Rate : {success_rate}%')
+    set_console_title(f'[ Tiktok MassReport ] Reports Sent : {success} ~ Failed : {failed} ~ Success Rate : {success_rate}%')
 def get_time_rn():
     date = datetime.datetime.now()
     hour = date.hour
